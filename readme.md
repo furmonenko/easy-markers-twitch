@@ -21,7 +21,7 @@ A Lua script for OBS Studio that allows streamers to create Twitch stream marker
 
 ## Installation
 
-1. Download the `east_markers_twitch.lua` script from the [releases page](https://github.com/furmonenko/obs-markers/releases/tag/easy_markers_twitch)
+1. Download the `easy_markers_twitch.lua` script from the [releases page](https://github.com/furmonenko/obs-markers/releases/tag/easy_markers_twitch)
 
 2. Place the file in your OBS scripts folder:
    - Windows: `%APPDATA%\obs-studio\scripts`

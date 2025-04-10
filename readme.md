@@ -1,4 +1,4 @@
-# Twitch Stream Marker OBS Script
+# Easy Twitch Markers of OBS!
 
 A Lua script for OBS Studio that allows streamers to create Twitch stream markers with a single keypress. Stream markers make it easy to highlight important moments during your broadcast that you can revisit later in your VOD.
 

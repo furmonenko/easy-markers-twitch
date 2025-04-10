@@ -1,6 +1,6 @@
-# Easy Twitch Markers of OBS!
+# Easy Twitch markers for OBS!
 
-A Lua script for OBS Studio that allows streamers to create Twitch stream markers with a single keypress. Stream markers make it easy to highlight important moments during your broadcast that you can revisit later in your VOD.
+A Lua script for OBS Studio that allows streamers to create Twitch stream markers with a single keypress. Stream markers make it easy to highlight important moments during your broadcast that you can revisit later in your VOD, as well as download .csv file with all Your markers to edit in your software of choice.
 
 ## Features
 
@@ -21,16 +21,17 @@ A Lua script for OBS Studio that allows streamers to create Twitch stream marker
 
 ## Installation
 
-1. Download the `easy_markers_twitch.lua` script from the [releases page](https://github.com/furmonenko/obs-markers/releases/tag/easy_markers_twitch)
+1. Download the `easy_twitch_markers.lua` script from the [releases page](https://github.com/furmonenko/easy-markers-twitch/releases/tag/Easy-Twitch-Markers)
 
 2. Place the file in your OBS scripts folder:
    - Windows: `%APPDATA%\obs-studio\scripts`
    - macOS: `~/Library/Application Support/obs-studio/scripts`
    - Linux: `~/.config/obs-studio/scripts`
+   - You can choose any folder as long as You choose it inside of OBS.
 
 3. In OBS Studio, go to Tools → Scripts
 
-4. Click the "+" button and select the `twitch_marker.lua` file
+4. Click the "+" button and select the `easy_twitch_markers.lua` file
 
 5. Configure the script with your Twitch credentials (see next section)
 
@@ -44,16 +45,18 @@ A Lua script for OBS Studio that allows streamers to create Twitch stream marker
 4. Fill in the application details:
    - Name: `OBS Marker Script` (or any name you prefer)
    - OAuth Redirect URLs: `http://localhost`
-   - Category: "Other"
+   - Click "Add" and add another OAuth Redirect URL - `https://twitchtokengenerator.com`
+   - Category: "Application Integration"
 5. Click "Create"
 6. On the next page, note down your **Client ID**
 7. Click "New Secret" and copy your **Client Secret**
+8. Solve captcha and click "Save".
 
 ### 2. Get Your OAuth Token
 
 1. Go to [Twitch Token Generator](https://twitchtokengenerator.com/)
 2. Click "Custom Scope Token"
-3. Select the `channel:manage:broadcast` permission
+3. Select the `channel:manage:broadcast` (You can also click "Select all")
 4. Click "Generate Token!"
 5. Authorize your Twitch account
 6. Copy the **Access Token** that appears
